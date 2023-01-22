@@ -160,4 +160,15 @@ final class PhotoHistoryTests: XCTestCase {
         // Act, Assert
         XCTAssertEqual(store.state.filteredHistory, expectedHistory)
     }
+
+    func testFilteredHistoryEmptyQuery() async throws {
+        // Arrange
+        let expectedHistory: [History] = .stub.reversed()
+        store = TestStore(initialState: .init(query: "",
+                                              history: .stub),
+                          reducer: PhotoHistory())
+
+        // Act, Assert
+        XCTAssertEqual(store.state.filteredHistory, expectedHistory)
+    }
 }
