@@ -5,7 +5,7 @@ Hi!
 ## Dependencies
 - TCA - Architecture, DI, tests
 - SDWebImageSwiftUI - Image loading.
-Indeed, there's AsyncImage but it's buggy (like cancel error in lists on iOS 16) and not so good with caching
+Indeed, there's AsyncImage but it's buggy (like cancel error in lists, stacks on iOS 16) and not so good with caching
 
 ## Implementation notes
 * The project has the following structure:<br>
@@ -24,7 +24,7 @@ Indeed, there's AsyncImage but it's buggy (like cancel error in lists on iOS 16)
 
 ## Implemented extra mile
 * *Save prior search terms and present them as quick search options*<br>
-I used files because saving data have a flat simple structure
+I used files because the data has a flat simple structure
 * Page results (allowing more than the initial 25 to be displayed)
 * *Sensible error handling and unit testing*<br>
 Errors are handled and displayed as an overlay view.<br>
