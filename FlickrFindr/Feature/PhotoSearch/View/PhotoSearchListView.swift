@@ -33,11 +33,8 @@ struct PhotoSearchListView: View {
                         }
                     }
                 }
-                .onChange(of: viewStore.page) { page in
-                    // Scroll to top on page == 1 to reset scroll
-                    guard page == 1 else {
-                        return
-                    }
+                .onChange(of: viewStore.query) { _ in
+                    // Scroll to top on new query
                     withAnimation {
                         proxy.scrollTo(topId, anchor: .top)
                     }
