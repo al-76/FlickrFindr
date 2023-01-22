@@ -32,4 +32,6 @@ Unit tests cover only the domain. It's reducers in **Feature/PhotoSearch**.
 * *Use only system frameworks for network requests and parsing*<br>
 I used standard URLSession, JSONDecoder
 
+![screen](https://user-images.githubusercontent.com/19591052/213930224-51441f50-f44e-4a95-99eb-d8108e963b64.gif)
+
 Thanks!
