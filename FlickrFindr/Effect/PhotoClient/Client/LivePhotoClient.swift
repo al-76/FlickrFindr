@@ -1,5 +1,5 @@
 //
-//  PhotoClientImpl.swift
+//  LivePhotoClient.swift
 //  FlickrFindr
 //
 //  Created by Vyacheslav Konopkin on 20.01.2023.
